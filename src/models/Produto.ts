@@ -1,10 +1,12 @@
-import type Categoria from './Categoria';
+import Categoria from './Categoria';
 
 export default interface Produto {
-  id: number,
-  nome: string,
-  descricao: string,
-  preco: number,
-  foto: string,
-  categoria: Categoria[] | null 
+  id: number;
+  nome: string;
+  descricao: string;
+  laboratorio: string;
+  foto: string;
+  preco: number;
+  
+  categoria: Categoria; 
 }
